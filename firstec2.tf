@@ -29,3 +29,11 @@ resource "aws_vpc" "my_vpc_test1" {
     Name = "Prod-VPC"
   }
 }
+resource "aws_vpc" "my_vpc_test2" {
+  cidr_block = "10.30.0.0/16"
+
+  tags = {
+    Name = "Stage-VPC"
+  }
+}
+
