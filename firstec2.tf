@@ -22,3 +22,10 @@ resource "aws_vpc" "my_vpc_test" {
     Name = "Dev-VPC"
   }
 }
+resource "aws_vpc" "my_vpc_test1" {
+  cidr_block = "10.20.0.0/16"
+  
+  tags = {
+    Name = "Prod-VPC"
+  }
+}
